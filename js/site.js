@@ -28,11 +28,18 @@
   function initGate() {
     const gate = byId("gate");
     const enterBtn = byId("enterBtn");
+    const musica = byId("musicaFundo");
     if (!gate || !enterBtn) return;
 
     enterBtn.addEventListener("click", function () {
       gate.classList.add("is-open");
 
+      if (musica) {
+        musica.volume = 0.6;
+        musica.play().catch((err) => {
+          console.warn("Não foi possível iniciar o áudio:", err);
+        });
+      }
       setTimeout(() => initPetals(), 400);
     });
   }
