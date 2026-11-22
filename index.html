@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Gercio & Aaliyah | Nossa história, nosso futuro</title>
+    <meta
+      name="description"
+      content="Uma homenagem de amor, arrependimento e esperança. 2 anos e 10 meses de uma história que merece continuar."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+ 
+    <canvas id="petals" aria-hidden="true"></canvas>
+
+
+    <div class="gate" id="gate">
+      <p class="gate-script">Para você, Aaliyah</p>
+      <h1>Nossa história, nosso futuro</h1>
+      <p class="gate-copy">
+        2 anos e 10 meses de amor. Uma vida inteira de memórias. E a esperança
+        de um recomeço.
+      </p>
+      <button type="button" class="btn btn-gold" id="enterBtn">
+        Entrar na nossa história
+      </button>
+    </div>
+
+    <div class="page">
+      <!-- Topbar -->
+      <header class="topbar">
+        <p class="brand">G & A</p>
+        <nav>
+          <a href="#historia">História</a>
+          <a href="#reflexao">Reflexão</a>
+          <a href="#futuro">Futuro</a>
+          <a href="#galeria">Galeria</a>
+        </nav>
+      </header>
+
+      <main>
+      
+        <section class="hero" id="inicio">
+          <p class="eyebrow">Gercio & Aaliyah</p>
+          <h1 class="script">Nós</h1>
+          <p class="subtitle">
+            2 anos e 10 meses de uma história que merece continuar
+          </p>
+
+          <div class="hero-cover">
+           
+            <img
+              src="./fotos/hero.jpeg"
+              alt="Gercio e Aaliyah"
+              loading="eager"
+            />
+            <div class="hero-cover-copy">
+              <p class="script">Desde o primeiro olhar</p>
+              <p>Uma jornada de amor, cumplicidade e aprendizado</p>
+            </div>
+          </div>
+
+          <!-- Contador -->
+          <div class="counter" id="counter" aria-live="polite">
+            <div class="unit">
+              <strong id="years">0</strong><span>anos</span>
+            </div>
+            <div class="unit">
+              <strong id="months">0</strong><span>meses</span>
+            </div>
+            <div class="unit">
+              <strong id="days">0</strong><span>dias</span>
+            </div>
+            <div class="unit">
+              <strong id="hours">0</strong><span>horas</span>
+            </div>
+            <div class="unit">
+              <strong id="minutes">0</strong><span>min</span>
+            </div>
+            <div class="unit">
+              <strong id="seconds">0</strong><span>seg</span>
+            </div>
+          </div>
+          <p class="since" id="sinceLabel"></p>
+          <p class="hero-line">
+            "Cada segundo ao seu lado foi um presente que eu nem sempre soube
+            valorizar."
+          </p>
+
+          <div class="hero-cta">
+            <a href="#historia" class="btn btn-outline"
+              >Relembrar nossa história ↓</a
+            >
+          </div>
+        </section>
+
+        <!-- ========== LINHA DO TEMPO / CHECKPOINTS ========== -->
+        <section class="section" id="historia">
+          <div class="section-head">
+            <p class="eyebrow">Os capítulos que escrevemos</p>
+            <h2>A nossa história</h2>
+            <p class="lede">
+              Cada momento, cada poema, cada foto — fragmentos de um amor que
+              construímos juntos.
+            </p>
+          </div>
+
+          <div class="timeline" id="timeline">
+            <!-- Checkpoint 1 -->
+            <article class="tl-item">
+              <div class="tl-content">
+                <p class="tl-date">O começo de tudo</p>
+                <h3 class="tl-title">O dia em que o acaso virou destino</h3>
+                <p class="tl-text">
+                  Parece que foi ontem. O primeiro olhar, a primeira conversa,
+                  quando voce sentou no meu colo e eu senti um frio na barriga,
+                  me lembro de pedir que de jeito nenhum saissem para te
+                  acompanhar sem mim, e do vazio grande que me veio a mente
+                  quando foste dormir
+                </p>
+                <div class="poem-card">
+                  <p class="poem-title">Primeiro Poema</p>
+                  <p class="poem-text">
+                    Tive um sonho e nele voce me aparece, no meio de olhares e
+                    abraços meu corpo de esquece. Lareira, quarto e uma mesa
+                    farta, mas seu corpo é a unica iguaria que me apetece; No
+                    meio ao meu coração gelado e calodo sinto que o teu amor é a
+                    única coisa que me apetece.
+                  </p>
+                  <span class="poem-author">— Seu amor Gercio</span>
+                </div>
+              </div>
+              <div class="tl-media">
+                <figure class="tl-photo">
+                  <!-- SUBSTITUA pelo caminho de uma foto do início do relacionamento -->
+                  <img
+                    src="./fotos/primeiro-encontro.jpeg"
+                    alt="Nosso primeiro encontro"
+                    loading="lazy"
+                  />
+                  <figcaption>O começo — quando tudo era descoberta</figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <!-- Checkpoint 2 -->
+            <article class="tl-item">
+              <div class="tl-content">
+                <p class="tl-date">Momentos que guardo</p>
+                <h3 class="tl-title">
+                  As pequenas coisas que se tornaram tudo
+                </h3>
+                <p class="tl-text">
+                  As risadas sem motivo, as conversas até tarde, os planos que
+                  fazíamos para um futuro que parecia certo. Cada detalhe
+                  contigo se tornou uma memória que carrego com carinho.
+                </p>
+                <div class="poem-card">
+                  <p class="poem-title">Carta Aberta para o meu Amor</p>
+                  <p class="poem-text">
+                   Achi que não tens muita do quanto eu me arrependo de quebrado a tua confiança;
+                   mas quero que saibas e tenhas sempre na mente o <strong>quanto te amor</strong>, quero
+                   tambem que sintas nas <strong>minhas atitudes</strong>. de nada vale falar uma coisa e agir ao contrario.
+                   E se me pergutassem hoje em dia o que é o amor, direi com toda <strong>certeza teu nome</strong>.
+                   Não venho pedir que esqueças o ocorrido <strong>Mas que me permitas todos os dias</strong> te mostrar 
+                   que sou e o que <strong>nós dois podemos ser</strong>.
+                   E sim amor tudo o que consta nessa carta eu podia falar, mas quis fazer algo diferentee que possa sempre ficar contigo e sempre ler se quiseres (<strong>Eu leio sempre meu amor</strong>)
+                   ,também dizer que é uma mistrura de pedido de desculpas e uma delcaração ou simplesmente uma carta amorosa.
+
+                   Eu te admiro tanto e não está escrito, te acho super inteligente, bonito, esperto um ombro perfeito que preciso todos os dias ao meu lado
+                   e já me ia esquecendo engraçadinho e gostoso tambem (risos, risos, risos). </br>
+
+                   Se me deres licença queria <strong>amar-vos por todos os dias que me restam</strong>. </br>
+
+                   sois o meu amor
+                  </p>
+                  <span class="poem-author">— Aaliyah</span>
+                </div>
+              </div>
+              <div class="tl-media">
+                <figure class="tl-photo">
+                  <img
+                    src="./fotos/momento-especial.jpeg"
+                    alt="Um momento nosso"
+                    loading="lazy"
+                  />
+                  <figcaption>Entre riscos e confiança</figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <!-- Checkpoint 3 -->
+            <article class="tl-item">
+              <div class="tl-content">
+                <p class="tl-date">O que construímos</p>
+                <h3 class="tl-title">Dois anos e dez meses de nós</h3>
+                <p class="tl-text">
+                  Não foram só dias. Foram experiências, aprendizados,
+                  crescimento. Construímos algo que ia além do namoro —
+                  construímos parceria, amizade, amor. E mesmo com os tropeços,
+                  o saldo é de gratidão.
+                </p>
+                <div class="poem-card">
+                  <p class="poem-title">Amor que transcende o tempo</p>
+                  <p class="poem-text">
+                     Seres humanos pensam há pelo menos 70 mil anos; e mesmo
+                    assim eu garanto que se o meu antigo eu ti vusse descobriria
+                    o <strong>fogo só para ter o prazer de olhar</strong>
+                    os teus olhos de noite; Se nós fossesmos escravos e eu
+                    tivesse que escolher entre ficar com você ou me tornar
+                    livre,
+                    <strong> viveria feliz em cárcere </strong>, granto que nenhum rei ou guerra
+                    me afastaria de você na idade média, nenhuma acusação de bruxaria pela sua beleza
+                    seria capaz de me fazer separar de ti.
+                    Durante as cruzadas nenhuma revolução tecnologica me faria de subistituir por um rôbo. 
+
+                    te amarei em todas as gerações e versões de mim mesmo.
+                  </p>
+                  <span class="poem-author">— Gercio</span>
+                </div>
+              </div>
+              <div class="tl-media">
+                <figure class="tl-photo">
+                  <!-- SUBSTITUA por foto de vocês juntos -->
+                  <img src="./fotos/juntos.jpeg" alt="Nós dois" loading="lazy" />
+                  <figcaption>Dois anos e dez meses — uma vida</figcaption>
+                </figure>
+              </div>
+            </article>
+            <!-- Checkpoint 4 -->
+            <article class="tl-item">
+              <div class="tl-content">
+                <p class="tl-date">O que Me proporcionou</p>
+                <h3 class="tl-title">Aniversario Marcante</h3>
+                <p class="tl-text">
+                  Desde que começamos o nosso relacionamento meus Aniversarios nunca mais foram 
+                  apenas uma data, você me fez sentir importante para ti e para outros
+                </p>
+                <div class="poem-card">
+                  <p class="poem-title">Uma douçura em uma cabeça dura</p>
+                  <p class="poem-text">
+                    Ela consegue entender assuntos complexos as 12h e dificultar assuntos simples as 16h, cabeça dura.
+                    Ela consegue falar por 30 minutos ininterruptos presencialmente mas sofre para articular duas frases
+                    online, cabeça dura.
+
+                    Minha teimosa, gosta de me provar errado mas tem humildade para assumir os seus erros, não é cabeça dura.
+                    Minha teimosa é humilde o suficiente para assumir os erros e eu não, sou cabeça dura.
+
+                    somos cabeça duras, porém, minha teimosa aceita mais. ao passo que eu SÓ aponto, sou cabeça dura.
+                    Minha teimosa tem uma vida, uma vida que não me pertence, ela não é só uma cabeça dura.
+                  </p>
+                  <span class="poem-author">— Gercio</span>
+                </div>
+              </div>
+              <div class="tl-media">
+                <figure class="tl-photo">
+                  <!-- SUBSTITUA por foto de vocês juntos -->
+                  <img src="./fotos/aniversario.jpeg" alt="Nós dois" loading="lazy" />
+                  <figcaption>Dois anos e dez meses — uma vida</figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <!-- Checkpoint 4 -->
+            <article class="tl-item">
+              <div class="tl-content">
+                <p class="tl-date">O que você me ensinou</p>
+                <h3 class="tl-title">Dia Marcante</h3>
+                <p class="tl-text">
+                  Contigo eu aprendi a valorizar o pedido do outro, a amar aquilo que o outro ama.
+                  a ceder de maneira prazerosa e não como uma carga, nem fazendo o outro ter de agradecer por iss.
+                  contigo aprendi que tudo que se faz com amor é o minino.
+                </p>
+                <div class="poem-card">
+                  <p class="poem-title">Os dias ficaram mais longos</p>
+                  <p class="poem-text">
+                    Estava trabalhando e do nada pensei, "que sabado mais longo", me ri.
+                    será que todos os sabados sempre foram assim? senti </br>
+
+                    Talvez eu tenha me habituado tanto ao barulho das tuas notificações que me esqueci.
+
+                    Jogo por 1h para preencher os momentos das nossas ligações sem nada a falar. </br>
+                    Que saudade, meu coração faz pensar.
+
+                    Espero que o teu dia esteja melhor do que o meu. pois não tem como estar pior numa relação em que o paranoico teimoso sou eu
+                  </p>
+                  <span class="poem-author">— Gercio</span>
+                </div>
+              </div>
+              <div class="tl-media">
+                <figure class="tl-photo">
+                  <!-- SUBSTITUA por foto de vocês juntos -->
+                  <img src="./fotos/aniversario2.jpeg" alt="Nós dois" loading="lazy" />
+                  <figcaption>Dois anos e dez meses — uma vida</figcaption>
+                </figure>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ========== REFLEXÃO ========== -->
+        <section class="section" id="reflexao">
+          <div class="reflection">
+            <p class="eyebrow">Do fundo do meu coração</p>
+            <h2>Meus erros, minha verdade</h2>
+            <p>
+              Aaliyah, eu preciso ser honesto contigo. Durante muito tempo, eu
+              achei que amar era só sentir. Mas amar é também estar presente, é
+              prestar atenção nos detalhes, é perceber quando o não se esta a ser respeitoso
+              e reciproco.
+            </p>
+            <p>
+              Eu falhei. Falhei nos pequenos gestos, nas palavras que disse mas não fiz,
+              Nos carinhos que você queria mas eu ignorei. Falhei em
+              estar presente como tu mereces — não só fisicamente, mas com a alma,
+              com a atenção e lucidez, com o cuidado que você sempre mereceu.
+            </p>
+            <p>
+              E o que aconteceu há duas semanas... eu sei que não foi do nada.
+              Foi o acúmulo das minhas ausências, dos meus comentarios, de mim colocando o peso
+              das nossas saídas nas tuas costas, das minhas distrações quando ao que você sempre gostou, da
+              minha dificuldade em demonstrar o que sinto.
+              <span class="highlight"
+                >Eu não te perdi por falta de amor — te perdi por que eu fui egoista e prepotente (derramei uma lagrima... quem diria).</span
+              >
+            </p>
+            <p>
+              Mas eu estou aqui. Não para me justificar, não para pedir que
+              esqueça. Estou aqui porque reconheço meus erros, porque me dói
+              saber que te frustrei tantas e tantas vezes, sempre querendo que você realizasse
+              os meus fetiches, mesmo eu ignorando os seus, porque tu sempre me ligaste para saber
+              se tinha algum problema entre nós mas eu não, porém, o mais importante é que
+              <span class="highlight"
+                >eu quero ser melhor — por mim, por nós, por você.</span
+              >
+            </p>
+            <p class="signature">Com todo o meu arrependimento,<br />Gercio</p>
+          </div>
+        </section>
+
+        <!-- ========== PONTO DE VIRADA ========== -->
+        <section class="section" id="futuro">
+          <div class="turning-point">
+            <p class="eyebrow">A escolha é sua</p>
+            <h2>Mas esse não precisa ser o fim</h2>
+            <p class="lede">
+              Eu acredito que ainda podemos escrever novos capítulos. Mas não
+              quero te convencer com palavras — quero te mostrar com atitudes.
+              Escolha um caminho abaixo e eu te mostro o que sinto.
+            </p>
+
+            <div class="choice-buttons">
+              <button type="button" class="btn btn-wine" id="believeBtn">
+                Eu ainda acredito em nós
+              </button>
+              <button type="button" class="btn btn-outline" id="trustBtn">
+                Será mesmo? Por que eu deveria confiar?
+              </button>
+            </div>
+
+           
+            <div class="reveal-panel" id="revealPanel">
+              <div class="reveal-inner" id="revealContent">
+                <!-- Conteúdo injetado via JS -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== GALERIA GERAL ========== -->
+        <section class="section" id="galeria">
+          <div class="section-head">
+            <p class="eyebrow">Nossa galeria</p>
+            <h2>Nós, em fotografias</h2>
+            <p class="lede">
+              Cada imagem é uma prova de que o que vivemos foi real, bonito e
+              merece ser lembrado.
+            </p>
+          </div>
+          <div class="gallery">
+            <!-- SUBSTITUA pelos caminhos reais das suas fotos -->
+            <figure>
+              <img src="./fotos/foto1.jpeg" alt="Momento 1" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="./fotos/foto2.jpeg" alt="Momento 2" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="./fotos/foto3.jpeg" alt="Momento 3" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="./fotos/foto4.jpeg" alt="Momento 4" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="./fotos/foto5.jpeg" alt="Momento 5" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="./fotos/foto6.jpeg" alt="Momento 6" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="./fotos/foto7.jpeg" alt="Momento 7" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="./fotos/foto8.jpeg" alt="Momento 8" loading="lazy" />
+            </figure>
+          </div>
+        </section>
+
+        <!-- ========== PROMESSAS ========== -->
+        <section class="section" id="promessas">
+          <div class="section-head">
+            <p class="eyebrow">Daqui para frente</p>
+            <h2>O que eu te prometo</h2>
+            <p class="lede">
+              Não são palavras bonitas. São compromissos que eu quero cumprir
+              contigo.
+            </p>
+          </div>
+          <div class="promises">
+            <div class="promise">
+              <span class="promise-icon">1</span>
+              <p>
+                Estar presente de verdade — não só no corpo, mas na atenção no que tu falas, nos teus hoobies, nas tuas fraquezas,
+                sem cobranças mesquinhas, no
+                cuidado e no detalhe.
+              </p>
+            </div>
+            <div class="promise">
+              <span class="promise-icon">2</span>
+              <p>
+                Ouvir mais, falar menos. Entender que o teu silêncio também tem
+                voz e merece acolhimento.
+              </p>
+            </div>
+            <div class="promise">
+              <span class="promise-icon">3</span>
+              <p>
+                Demonstrar o que sinto todos os dias, com atitudes simples que
+                provem meu amor por você.
+              </p>
+            </div>
+            <div class="promise">
+              <span class="promise-icon">4</span>
+              <p>
+                Não me isolar quando algo me irrita — ficar, mesmo quando for mais
+                fácil ir embora.
+              </p>
+            </div>
+            <div class="promise">
+              <span class="promise-icon">5</span>
+              <p>
+                Ser teu parceiro, teu amigo, teu porto seguro, teu maior fã. E escolher você
+                todos os dias.
+              </p>
+            </div>
+            <div class="promise">
+              <span class="promise-icon">6</span>
+              <p>
+                Te amar não só com palavras, mas com presença. Porque você
+                merece o meu melhor.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p class="script">Gercio & Aaliyah</p>
+        <p>
+          Feito com amor, arrependimento e esperança — para a mulher que mudou
+          minha vida.
+        </p>
+      </footer>
+    </div>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="./js/site.js"></script>
+  </body>
+</html>
